@@ -1,0 +1,341 @@
+<html>
+<head>
+  <link rel="stylesheet" href="login.html"/>
+  <link href='https://fonts.googleapis.com/css?family=Padauk' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Zen Kaku Gothic Antique' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<style>
+body {
+  background-image: url('demo.jpg');  
+  background-repeat: no-repeat;
+  background-attachment:local; 
+  background-size: 100% 600px;
+  font-family: 'Padauk';font-size: 22px;
+}
+p.p1 {
+  font-size: 30px;
+    margin-top: 30px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 850px;
+}
+p{margin-bottom: 0px;
+    margin-top: 150px;
+  margin-right: 150px;
+  margin-left: 530px;
+}
+a:link,a:visited {
+  margin-left: 30px;
+  text-decoration: none;
+}
+/*Botton code*/
+.button {
+  border-radius: 4px;
+  background-color: #ece8e8;
+  border: none;
+  color: #0f0f0f; 
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 25px;
+  border-radius: 8px 8px 8px 8px; 
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -6;
+  right: -50px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a{
+  color: black;
+  font-size: 70%;
+}
+/*Footer code*/
+.footer-dark {
+  width: 100%;
+  height: 60%;
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+.footer-dark h3 {
+  margin-top:40px;
+  margin-bottom:12px;
+  text-align: center; 
+  font-weight:bold;
+  font-size:18px;
+}
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  margin-left: 80px;
+  line-height:1.4;
+  font-size:23px;
+  margin-bottom:0;
+}
+.footer-dark ul a {
+  color:inherit;
+  opacity:0.6;
+}
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:80px;
+}
+.footer-dark .item.social {
+  text-align:center;
+}
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:200px;
+  }
+}
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:20%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:10px 8px 8px 10px; 
+  color:#fff;
+  opacity:0.75;
+  padding-top: 10px;
+  
+}
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+hr.new1 {
+  border-top: 1px solid white;
+  width: 80%;
+}
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+p.p2{margin-bottom: 0px;
+    margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+#second-section{
+  margin-top: 260px;
+  margin-bottom: 50px;
+}
+.card{
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #ccc;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.card:hover{
+  box-shadow: 1px 1px 10px #000;
+  cursor: pointer;
+}
+.card-bottom{
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  margin-top: 150px;
+}
+/*search bar code*/
+.search-box{
+  width: 40vw;
+  height: 45px;
+  background-color: white;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left:20px;
+  outline: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.search-btn{
+  width: 130px;
+  background-color: rgb(194, 29, 29);
+  color: white;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+  font-size:20px; 
+}
+
+</style>
+</head>
+<body >
+<p class="p1"><a href="addbarandwine.html "style= "color:white;"> Add bar and wine shop </a> <a href="login.html"style= color:white> Log in </a> <a href="Signup.html"style= color:white> Sign up </a></p>
+
+<h1><p style="color:white; font-family:'Courgette';font-size: 80px; margin-left: 600px;" >just chill</p></h1>
+
+<div class="d-flex justify-content-center mt-4">
+     <input style="font-family: 'Athiti';font-size: 16px;" type="text"placeholder="Search the best wine shop, bars and pubs in india"class="Search-box"/>
+     <button class="search-btn">Search</button> 
+</div>
+
+<section id="second-section">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card"style="margin-left: 180px;">
+                <img src="demo-1.jpeg"height="100%" width="100%"/>
+                    <div class="card-bottom">
+                  <p class="h4 m-0 mt-2 text-center" style="font-size: 16px;">Stay home and order to your doorstep</p>
+                    </div>
+               </div>
+             </div>
+            <div class="col-md-3">
+              <div class="card"style="margin-left: 90px;">
+                <img src="demo-2.jpeg"height="100%" width="100%"/>
+                    <div class="card-bottom">
+                  <p class="h4 m-0 mt-2 text-center">Order online</p>
+                    </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card"style="margin-right: 90px;">
+                <img src="demo-3.jpeg"height="100%" width="100%"/>
+                    <div class="card-bottom">
+                  <p class="h4 m-0 mt-2 text-center">Order online</p>
+                    </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card"style="margin-left: -90px;">
+                <img src="demo.jpg"height="100%" width="100%"/>
+                    <div class="card-bottom">
+                  <p class="h4 m-0 mt-2 text-center">Order online</p>
+                    </div>
+               </div>
+            </div>
+          </div>
+</section>
+
+
+<h2><p style="font-family: 'Athiti';margin-top: 0px;">Popular locations in <img src="india.png" alt="india flag" width="50" height="50"style="vertical-align:bottom"> India</p></h2>
+
+<p style="margin-left:100px;margin-top: 40px; text-align: center;">From swanky upscale bar and wine shop to the cosiest hidden gems serving the most incredible drinks,<br>
+ Just Chill covers it all. Explore menus, and millions of bars photos and reviews from users<br>
+ just like you, to find your next great drinks.<br></p>
+
+
+ <div style="margin-top: -130px;margin-left: 125px;">
+ <p style="margin-bottom: 50px;margin-left: 60px;">
+  <button class="button"><span><a href="main.html">Pune </a></span></button> <button class="button"><span><a href="main.html">Chennai </a> </span></button> <button class="button"><span><a href="main.html">Amritsar </a> </span></button>
+  <button class="button"><span><a href="main.html">Aurangabad </a></span></button> <button class="button"><span><a href="main.html">Delhi NCR </a> </span></button> <button class="button"><span><a href="main.html">Goa </a> </span></button>
+  <button class="button"><span><a href="main.html">Ahmedabad </a></span></button> <button class="button"><span><a href="main.html">Hyderabad </a> </span></button> <button class="button"><span><a href="main.html">Indore </a> </span></button>
+  <button class="button"><span><a href="main.html">Ajmer </a></span></button> <button class="button"><span><a href="main.html">Nashik </a> </span></button> <button class="button"><span><a href="main.html">Kolhapur </a> </span></button>
+  <button class="button"><span><a href="main.html">Amravati </a></span></button> <button class="button"><span><a href="main.html">Kolkata </a> </span></button> <button class="button"><span><a href="main.html">Nagpur </a> </span></button>
+  <button class="button"><span><a href="main.html">Bengaluru </a></span></button> <button class="button"><span><a href="main.html">Patna </a> </span></button> <button class="button"><span><a href="main.html">Raipur </a> </span></button>
+  <button class="button"><span><a href="main.html">Bhopal </a></span></button> <button class="button"><span><a href="main.html">Surat </a> </span></button> <button class="button"><span><a href="main.html">Visakhapatnam </a> </span></button>
+  <button class="button"><span><a href="main.html">Vadodara </a></span></button> <button class="button"><span><a href="main.html">Mumbai </a> </span></button> <button class="button"><span><a href="main.html">Manali </a> </span></button>
+
+</p>
+</div>
+
+<div class="footer-dark">
+  <footer>
+      <div >
+        <h1><p style="color:white; font-family:'Courgette';font-size: 40px; margin-left: 200px;margin-top: -20px;font-weight:bolder;" >just chill</p></h1>
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3 style="margin-left:70px ;">SERVICES</h3>
+                  <ul style="margin-left:145px ;">
+                      <li><a href="#">Add Bar & Wine Shop</a></li>
+                      <li><a href="#">Just Chill for Work</a></li>
+                      <li><a href="#">Mobile Apps</a></li>
+                      <li><a href="#">Ride with us</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3 style="margin-right: 70px;">LEGAL</h3>
+                  <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Refund & Cancellation</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Offer Terms</a></li>
+                      <li><a href="#">Phishing & Fraud</a></li>
+                      <li><a href="#">Help & Support</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                <h3 style="margin-right: 170px;">COMPANY</h3>
+                <ul style="margin-left:20px ;" >
+                  <li><a href="#">About us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+                <h3 style="margin-left: 20px;">SOCIAL LINKS</h3>
+              <div class="col item social" style="margin-top: 100px;margin-left: -370px;"><a  href="#"><i class="icon ion-social-facebook" ></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <hr class="new1">
+          <p class="copyright"style="margin-top:-15px;margin-left: 100px">Just Chill © 2021</p>
+      </div>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
